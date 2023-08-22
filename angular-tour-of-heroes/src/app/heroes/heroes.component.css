@@ -19,6 +19,7 @@
     margin: .5em;
     padding: 0;
     border-radius: 4px;
+    border: none;
     display: flex;
     align-items: stretch;
     height: 1.8em;
@@ -27,7 +28,7 @@
 .heroes button:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
-    left: .1em;
+    left: .5em;
 }
 
 .heroes button:active {
@@ -56,7 +57,7 @@
     color: white;
     padding: 0.8em 0.7em 0 0.7em;
     background-color: #405061;
-    line-height: 1em;
+    line-height: 0.2em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
 }
