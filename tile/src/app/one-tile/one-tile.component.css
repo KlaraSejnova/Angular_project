@@ -13,9 +13,6 @@ h1 {
     grid-template-columns: 370px 370px 370px;
     grid-template-rows: 370px 370px;
     grid-gap: 29px;
-    margin-left: 380px;
-    position: relative;
-    left: -18%;
 }
 
 .tile-grid.landscape {
