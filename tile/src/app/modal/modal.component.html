@@ -1,0 +1,14 @@
+<dialog #myDialog>
+  <div>
+    Your country:
+    <select>
+      <option *ngFor="let Option of Options">{{ Option.name }}</option>
+    </select>
+  </div>
+  <div>
+    <button (click)="myDialog.close()">OK</button>
+  </div>
+</dialog>
+<button (click)="myDialog.show()">
+  <img class="icon" src="../../assets/settings-svgrepo-com.svg" alt="*" />
+</button>
