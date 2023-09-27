@@ -15,4 +15,10 @@ export class OneTileComponent {
     { title: 'Videos' },
     { title: 'Shop' },
   ];
+  toggle: boolean = true;
+  changeClass() {
+    this.toggle = !this.toggle;
+  }
+
+  ngOnInit() {}
 }

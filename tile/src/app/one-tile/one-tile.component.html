@@ -1,5 +1,22 @@
-<div class="tile-grid landscape">
+<div [ngClass]="{ square: !toggle, landscape: toggle }" class="landscape">
   <div *ngFor="let tail of Tails" class="container">
     <h1>{{ tail.title }}</h1>
   </div>
 </div>
+
+<div class="center">
+  <button (click)="myDialog.show()">
+    <img class="icon" src="../../assets/settings-svgrepo-com.svg" alt="*" />
+  </button>
+</div>
+
+<dialog #myDialog>
+  <div class="dialog">
+    <div class="option">
+      <button (click)="changeClass()">Change Tail layout</button>
+    </div>
+    <div class="exit">
+      <button (click)="myDialog.close()">Exit</button>
+    </div>
+  </div>
+</dialog>

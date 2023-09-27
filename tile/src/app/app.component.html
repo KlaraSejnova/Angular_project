@@ -1,4 +1,32 @@
-<h2>{{ subtitle }}</h2>
-<h1>{{ title }}</h1>
+<dialog #myDialogSubtitle>
+  <span>Insert custom text for subtitle</span>
+  <div>
+    <input [value]="subtitle" (input)="subtitle = getValue($event)" />
+  </div>
+  <div>
+    <button (click)="myDialogSubtitle.close()">OK</button>
+  </div>
+</dialog>
+<div class="center">
+  <button (click)="myDialogSubtitle.show()">
+    <h2>{{ subtitle }}</h2>
+  </button>
+</div>
+
+<dialog #myDialogTitle>
+  <span>Insert custom text for title</span>
+  <div>
+    <input [value]="title" (input)="title = getValue($event)" />
+  </div>
+  <div>
+    <button (click)="myDialogTitle.close()">OK</button>
+  </div>
+</dialog>
+<div class="center">
+  <button (click)="myDialogTitle.show()">
+    <h1>{{ title }}</h1>
+  </button>
+</div>
+
 <div class="center"><app-one-tile></app-one-tile></div>
-<div class="center"><app-modal></app-modal></div>
+<!-- <div class="center"><app-modal></app-modal></div> -->
